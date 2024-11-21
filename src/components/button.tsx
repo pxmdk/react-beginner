@@ -3,7 +3,8 @@ interface Props {
   color?: string;
   onClick: () => void;
 }
-const button = ({ children, onClick, color = "primary" }: Props) => {
+
+const Button = ({ children, onClick, color = "primary" }: Props) => {
   return (
     <button className={"btn btn-" + color} onClick={onClick}>
       {children}
@@ -11,4 +12,4 @@ const button = ({ children, onClick, color = "primary" }: Props) => {
   );
 };
 
-export default button;
+export default Button;
